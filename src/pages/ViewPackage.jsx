@@ -104,6 +104,7 @@ class ViewPackage extends Component {
                             <div style={{zIndex: 1}} className="close">
                                 <i style={{cursor: 'pointer'}}  onClick={() => this.removeImage(i)} className="fa fa-times"></i>
                             </div>
+                            
                             <div className="img-box">
                                 <img key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
                                     alt={image.name}></img>
@@ -180,7 +181,7 @@ class ViewPackage extends Component {
       </section> */}
                     <div className="side-labels">
                         <span className="" data-target="#share" data-toggle="modal" className="view-packages">
-                            Save And Request
+                            SAVE AND REQUEST
         </span>
                     </div>
                     <div className="container pad" style={{ width: '78%', marginTop: '60px' }}>

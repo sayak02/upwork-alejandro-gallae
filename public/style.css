@@ -198,7 +198,7 @@ a:focus, a:hover {
 }
 
 .image_text .image1 {
-    opacity: 0.3;
+    opacity: 1;
   
   }
 
@@ -237,10 +237,16 @@ a:focus, a:hover {
     position: absolute;
     top: 20px;
     right: 0;
-    padding-bottom: 1px;
+    /* padding-bottom: 1px; */
     transition: .8s ease;
     opacity: 0;
     text-align: center;
+}
+
+/* for talent image hover text */
+.top-right-fix{
+    top:10px;
+    /* font-size: xx-small; */
 }
 
 .image_text:hover .top-right {
@@ -250,15 +256,16 @@ a:focus, a:hover {
     position: relative;
     text-align: center;
     color:black;  
+    /* margin-left: 20px; */
 }
 .top-right button, .top-right h4{
     display: block;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: -5px;
+    /* margin-bottom: -2px; */
     padding: 0 10px;
     text-transform: uppercase;
     display: block;
-    margin: 2px 0;
+    /* margin: 2px ; */
     width: 100%;
     text-align: right;
     font-family: helvetica-neue-light;
@@ -267,7 +274,7 @@ a:focus, a:hover {
 .top-right a,.top-right h4{
     color: #000;
    text-decoration: none;
-   font-size:14px;
+   font-size:10px;
 }
 .top-right button a:focus,.top-right button:focus{
     outline: unset;
@@ -278,7 +285,10 @@ a:focus, a:hover {
     color: #000 !important;
 }
  
-
+/* for requested to be shown down */
+.top-right h4{
+    margin-top: 5px;
+}
  .hidden{
      visibility: hidden;
  }
@@ -611,7 +621,7 @@ nav.header-fixed:hover .nav-custom{
 .image_text .close {
 	position: absolute;
 	color: #000;
-	opacity: 1;
+	/* opacity: 1;container pad */
 	font-size: 14px;
 	background-color: rgba(255,255,255,0.3);
 	width: 100%;
@@ -627,4 +637,12 @@ nav.header-fixed:hover .nav-custom{
     font-weight: 500;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif
+}
+
+.image_text .close i{
+    visibility: hidden;
+}
+
+.image_text:hover .close i {
+    visibility: visible;
 }

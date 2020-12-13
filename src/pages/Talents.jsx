@@ -91,7 +91,7 @@ render() {
                 <img key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
                 alt={image.name}></img>
               </div>
-              <div className="top-right">
+              <div className="top-right top-right-fix">
                 <h4 className="">Requested</h4>
               </div>
             </div>
@@ -101,7 +101,7 @@ render() {
                 <img key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
                 alt={image.name}></img>
               </div>
-              <div className="top-right">
+              <div className="top-right top-right-fix">
                 <button>
                   <Link className="" data-target="#share" data-toggle="modal">Share</Link></button>
                 <button onClick={()=>this.requestImage(i)}>
@@ -132,6 +132,7 @@ render() {
         {rowContents}
       </div>
       );
+
 
   return (
   <div>
