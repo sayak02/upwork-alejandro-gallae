@@ -551,6 +551,16 @@ nav li.active a,.dropdown-content .active a{
     font-family: dodit-medium;
     color: #89797e 
 }
+
+.success-message{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    margin: 20px 0;
+    font-family: dodit-medium;
+    color: #89797e;
+    font-size: 15px;
+}
 .modal form input:focus,.modal form textarea:focus{
     outline: unset;
 }

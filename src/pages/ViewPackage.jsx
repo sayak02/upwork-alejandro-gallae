@@ -238,16 +238,18 @@ class ViewPackage extends Component {
                                     <textarea placeholder="COMMENTS*"></textarea>
                                     <button>Share</button>
                                 </form> */}
-                                <p>
-                                    Your Request has been well-received.<br/>
+                                <form>
+                                <p className="success-message">
+                                    Your Request has been well-received.<br/><br/>
                                     One of our agents will be in touch with you directly via the
-                                    email address provided.<br/>
-                                    Due to the volume of requests received, please allow upto 48 hours for correspondence<br/>
-                                    All the best, from the team at SYSTEM Agency. <br/>
+                                    email address provided.<br/><br/>
+                                    Due to the volume of requests received, please allow upto 48 hours for correspondence<br/><br/>
+                                    All the best, from the team at SYSTEM Agency. <br/><br/>
                                     <button onClick={()=>{
                                         window.close();
                                     }}>Close</button>
                                 </p>
+                                </form>
                             </div>
                         </div>
 
