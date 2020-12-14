@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import InstagramIco from '../assets/instagram-ico.png'
 
@@ -16,6 +17,7 @@ class Footer extends Component {
         <a href="https://www.instagram.com/systemagency/">
           <img className="mt-12 pt-1" src={InstagramIco} alt="" width="12px" />
         </a>
+        
       </footer>
     );
   }
