@@ -560,6 +560,7 @@ nav li.active a,.dropdown-content .active a{
     font-family: dodit-medium;
     color: #89797e;
     font-size: 15px;
+    
 }
 .modal form input:focus,.modal form textarea:focus{
     outline: unset;
