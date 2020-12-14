@@ -180,7 +180,7 @@ class ViewPackage extends Component {
        
       </section> */}
                     <div className="side-labels">
-                        <span className="" data-target="#share" data-toggle="modal" className="view-packages">
+                        <span className="" data-target="#request" data-toggle="modal" className="view-packages">
                             SAVE AND REQUEST
         </span>
                     </div>
@@ -197,7 +197,7 @@ class ViewPackage extends Component {
 
                         <div class="modal-content">
                             <div class="modal-body">
-                                <h2>Share</h2>
+                                <h2>SHARE</h2>
                                 <form action="">
                                     <input type="text" placeholder="EMAIL(S)*" />
                                     <textarea placeholder="COMMENTS*"></textarea>
@@ -218,13 +218,42 @@ class ViewPackage extends Component {
                                     <input type="text" placeholder="Name*" />
                                     <input type="text" placeholder="Emails*" />
                                     <textarea placeholder="Comments*"></textarea>
-                                    <button>Request Package</button>
+                                    <button data-target="#request-success" data-dismiss="modal" data-toggle="modal">Request Package</button>
                                 </form>
                             </div>
                         </div>
 
                     </div>
                 </div>
+
+                <div id="request-success" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h2>PACKAGE REQUESTED</h2>
+                                {/* <form action="">
+                                    <input type="text" placeholder="NAME*" />
+                                    <input type="text" placeholder="EMAIL(S)*" />
+                                    <textarea placeholder="COMMENTS*"></textarea>
+                                    <button>Share</button>
+                                </form> */}
+                                <p>
+                                    Your Request has been well-received.<br/>
+                                    One of our agents will be in touch with you directly via the
+                                    email address provided.<br/>
+                                    Due to the volume of requests received, please allow upto 48 hours for correspondence<br/>
+                                    All the best, from the team at SYSTEM Agency. <br/>
+                                    <button onClick={()=>{
+                                        window.close();
+                                    }}>Close</button>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         );
     }

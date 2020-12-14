@@ -74,6 +74,10 @@ class Talents extends Component {
     })
   }
 
+  openTab=(url)=>{
+    window.open(url,'_blank');
+  }
+
 // https://stackoverflow.com/questions/42391499/react-render-new-row-every-4th-column
 render() {
       const {url}=this.props.match
@@ -104,8 +108,8 @@ render() {
               <div className="top-right top-right-fix">
                 <button>
                   <Link className="" data-target="#share" data-toggle="modal">Share</Link></button>
-                <button onClick={()=>this.requestImage(i)}>
-                  <Link className="">Request</Link></button>
+                <button >
+                  <Link onClick={()=>this.requestImage(i)} className="">Request</Link></button>
               </div>
             </div>
           }
@@ -227,7 +231,7 @@ render() {
       </section>
       <div className="side-labels">
         <span className="view-packages"> 
-         <Link style={{color:"#333",textDecoration:"none",fontsize:"14px"}} to={`/viewpackage/${this.state.selectedImages.join(',')}`}> VIEW PACKAGE</Link>
+         <button onClick={()=>{   this.openTab(`/viewpackage/${this.state.selectedImages.join(',')}`) }} style={{color:"#333",textDecoration:"none",fontsize:"14px"}} > VIEW PACKAGE</button>
         </span>
         <span className="deselect-all" onClick={()=>this.deletselectAll()}>
           DESELECT ALL
